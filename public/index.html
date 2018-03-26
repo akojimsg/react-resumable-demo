@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Marco - Bootstrap Landing Page</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/typicons/typicons.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/animate.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/form-elements.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/style.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/media-queries.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="%PUBLIC_URL%/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="%PUBLIC_URL%/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="%PUBLIC_URL%/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="%PUBLIC_URL%/assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+  <body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-img"></div>
+  </div>
+
+  <!-- Top content -->
+  <div class="top-content">
+
+    <!-- Top menu -->
+    <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Marco - Bootstrap Landing Page</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="top-navbar-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="scroll-link" href="#features">Features</a></li>
+            <li><a class="scroll-link" href="#how-it-works">How it works</a></li>
+            <li><a class="scroll-link" href="#pricing">Price</a></li>
+            <li><a class="scroll-link" href="#about-us">About</a></li>
+            <li><a class="scroll-link" href="#testimonials">Testimonials</a></li>
+            <li><a class="btn btn-link-2 scroll-link" href="#pricing">Get it now!</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="inner-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text">
+            <h1 class="wow fadeInLeftBig">Working <strong>Subscription</strong> Form</h1>
+            <div class="description wow fadeInLeftBig">
+              <p>
+                We have been working very hard to create the new version of our web app.
+                It comes with a lot of new features, easy to follow videos and images. Subscribe now!
+              </p>
+            </div>
+            <div class="subscribe wow fadeInUp">
+              <form class="form-inline" role="form" action="assets/subscribe.php" method="post">
+                <div class="form-group">
+                  <label class="sr-only" for="subscribe-email">Email address</label>
+                  <input type="text" name="email" placeholder="Enter your email..." class="subscribe-email form-control" id="subscribe-email">
+                </div>
+                <button type="submit" class="btn">Subscribe</button>
+              </form>
+              <div class="success-message"></div>
+              <div class="error-message"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="root"></div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 footer-social">
+          <a href="#"><span class="typcn typcn-social-facebook"></span></a>
+          <a href="#"><span class="typcn typcn-social-dribbble"></span></a>
+          <a href="#"><span class="typcn typcn-social-twitter"></span></a>
+          <a href="#"><span class="typcn typcn-social-google-plus"></span></a>
+          <a href="#"><span class="typcn typcn-social-instagram"></span></a>
+          <a href="#"><span class="typcn typcn-social-pinterest"></span></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 footer-copyright">
+          &copy; Marco Bootstrap Template by <a href="http://azmind.com">Azmind</a>.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Javascript -->
+  <script src="%PUBLIC_URL%/assets/js/jquery-1.11.1.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/jquery.backstretch.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/wow.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/retina-1.1.0.min.js"></script>
+  <script src="%PUBLIC_URL%/assets/js/scripts.js"></script>
+
+  <!--[if lt IE 10]>
+  <script src="%PUBLIC_URL%/assets/js/placeholder.js"></script>
+  <![endif]-->
+
+  </body>
+</html>
